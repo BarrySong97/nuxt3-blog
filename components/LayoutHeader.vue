@@ -11,7 +11,7 @@
     </div>
 </template>
 <script setup lang="ts">
-import Github from '@/assets/icons/github.vue'
+import Github from '@/assets/icons/Github.vue'
 const route = useRoute();
 const isPost = route.path.includes('/blogs');
 const githubUrl = 'https://github.com/BarrySong97'
