@@ -2,6 +2,7 @@
 title: 第一眼看pnpm monorepo（1）项目结构与依赖安装
 date: 2022-07-26
 category: coding
+layout: article
 authors: Barry
 tags: [Pnpm, Monorepo]
 ---

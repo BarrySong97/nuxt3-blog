@@ -3,17 +3,21 @@
         <h1 class="tracking-wider font-600 text-2xl self-center">ByLittle</h1>
         <nav class="justify-self-center self-end">
             <NuxtLink activeClass="activeLink " to="/" class="mr-4 link">Home</NuxtLink>
-            <NuxtLink activeClass="activeLink " to="/blogs?category=coding" class="link">Blog</NuxtLink>
+            <NuxtLink :class="{ 'activeLink': isPost }" to="/blogs/coding" class="link">Blog</NuxtLink>
         </nav>
-        <div class="place-self-end ">
-
-        </div>
+        <a class="place-self-end " :href="githubUrl" target="_blank">
+            <Github class="icon" />
+        </a>
     </div>
 </template>
-<script>
+<script setup lang="ts">
+import Github from '@/assets/icons/github.vue'
+const route = useRoute();
+const isPost = route.path.includes('/blogs');
+const githubUrl = 'https://github.com/BarrySong97'
 </script>
 
-<style>
+<style scoped>
 .link {
     color: #71717a;
     padding: 8px 16px;
@@ -34,5 +38,9 @@
 .header {
     z-index: 100;
     border-bottom: 1px solid #eaeaea;
+}
+
+.icon {
+    font-size: 24px;
 }
 </style>

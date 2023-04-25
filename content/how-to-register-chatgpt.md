@@ -2,6 +2,7 @@
 title: 如何快速注册Chatgpt账号，宝宝级别教程
 date: 2023-03-23T19:12
 category: coding
+layout: article
 authors: Barry
 ---
 

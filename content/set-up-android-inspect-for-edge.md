@@ -3,6 +3,7 @@ title: 如何调试Android手机浏览器页面
 date: 2022-08-05T11:33
 authors: Barry
 category: coding
+layout: article
 tags: [JavaScript, Android, 调试]
 ---
 

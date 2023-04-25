@@ -2,6 +2,7 @@
 title: 给前端项目配置代码规范工具
 date: 2021-06-19T10:00
 category: coding
+layout: article
 authors: Barry
 tags: [Eslint, Typescript, JavaScripts]
 ---

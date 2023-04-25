@@ -3,6 +3,7 @@ title: 关于如何计算input [type="range"]里面小球(thumb)的位置
 date: 2022-08-10T16:54
 authors: Barry
 category: coding
+layout: article
 tags: [HTML, 组件开发思路]
 ---
 

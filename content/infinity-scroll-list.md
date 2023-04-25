@@ -3,6 +3,7 @@ title: 无缝滚动的列表
 date: 2021-06-19T10:00
 authors: Barry
 category: coding
+layout: article
 tags: [CSS, 组件开发思路]
 ---
 

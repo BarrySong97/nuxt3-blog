@@ -1,24 +1,30 @@
-<template>
-    <div class="articleContent m-auto">
-        <h1 class="mt-8 mb-6 font-extrabold text-4xl">{{ page.title }}</h1>
-        <div class="text-sm text-gray-400 mb-5">{{ date }}</div>
-        <slot />
-        <div class="mb-6">
-            <NuxtLink to="/blogs/coding" class="text-gray-400 hover:text-gray-500">← 返回</NuxtLink>
-        </div>
-        <PageToc />
-    </div>
-</template>
-<script lang="ts" setup>
-import dayjs from 'dayjs'
-const content = useContent()
-
-const page = content.page
-const date = dayjs(page.value.date).format('YYYY-MM-DD HH:mm')
-
+<script setup lang="ts">
+const { toc } = useContent();
+console.log(toc);
 
 </script>
+
+<template>
+    <div class="toc" v-if="toc.links.length">
+
+        <span>目录</span>
+        <ul v-if="toc && toc.links">
+            <li v-for="link in toc.links" :key="link.text">
+                <a :href="`#${link.id}`">
+                    {{ link.text }}
+                </a>
+            </li>
+        </ul>
+    </div>
+</template>
+
 <style scoped>
+.toc {
+    position: fixed;
+    top: 110px;
+    left: 80px;
+}
+
 a {
     font-family: var(--typography-font-body);
     font-weight: var(--prose-a-fontWeight);
@@ -29,16 +35,16 @@ a {
     border-bottom-color: var(--prose-a-border-color-static);
     padding-bottom: var(--prose-a-border-distance);
     color: var(--prose-a-color-static);
+    display: inline-block;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 a:hover {
-    /* color: var(--prose-a-color-hover); */
+    color: var(--prose-a-color-hover);
     border-color: var(--prose-a-border-color-hover);
     border-style: var(--prose-a-border-style-hover);
-}
-
-.articleContent {
-    max-width: 65ch;
-
 }
 </style>
