@@ -13,7 +13,7 @@
 <script setup lang="ts">
 import Github from '@/assets/icons/Github.vue'
 const route = useRoute();
-const isPost = route.path.includes('/blogs');
+const isPost = computed(() => route.path.includes('/blogs'));
 const githubUrl = 'https://github.com/BarrySong97'
 </script>
 
