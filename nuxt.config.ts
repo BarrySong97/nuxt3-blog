@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   extends: "@nuxt-themes/typography",
   css: ["~/assets/css/main.css", "vue-final-modal/style.css"],
   modules: ["@nuxt/content"],
+
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -10,10 +11,6 @@ export default defineNuxtConfig({
     },
   },
   content: {
-    documentDriven: {
-      layoutFallbacks: ["aritcle"],
-    },
-
     // https://content.nuxtjs.org/api/configuration
   },
 });

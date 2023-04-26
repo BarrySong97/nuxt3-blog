@@ -23,7 +23,6 @@ import dayjs from 'dayjs';
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
 import 'dayjs/locale/zh-cn'
 dayjs.locale('zh-cn')
-
 const route = useRoute();
 interface MyCustomParsedContent extends ParsedContent {
     date: string;
