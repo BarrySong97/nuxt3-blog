@@ -45,9 +45,23 @@ const projects = [
     border-radius: 8px;
 }
 
+.dark .project {
+    --elements-backdrop-filter: saturate(200%) blur(20px);
+    --elements-backdrop-background: #0c0d0ccc;
+    backdrop-filter: var(--elements-backdrop-filter);
+    background: var(--elements-backdrop-background);
+}
+
 .project:hover {
 
     background-color: rgb(240, 241, 241);
+}
+
+.dark .project:hover {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    --un-bg-opacity: 1;
+    background-color: rgba(24, 24, 27, var(--un-bg-opacity));
 }
 
 .icon {

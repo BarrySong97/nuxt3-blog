@@ -10,7 +10,7 @@ console.log(toc);
         <span>目录</span>
         <ul v-if="toc && toc.links">
             <li v-for="link in toc.links" :key="link.text">
-                <a :href="`#${link.id}`">
+                <a :href="`#${link.id}`" class="dark:text-white">
                     {{ link.text }}
                 </a>
             </li>

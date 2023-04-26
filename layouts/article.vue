@@ -1,10 +1,12 @@
 <template>
     <div class="articleContent m-auto">
-        <h1 class="mt-8 mb-6 font-extrabold text-4xl">{{ page.title }}</h1>
+        <h1 class="mt-8 mb-6 font-extrabold text-4xl dark:text-white">{{ page.title }}</h1>
         <div class="text-sm text-gray-400 mb-5">{{ date }}</div>
-        <slot />
+        <div class="dark:text-white">
+            <slot />
+        </div>
         <div class="mb-6">
-            <NuxtLink to="/blogs/coding" class="text-gray-400 hover:text-gray-500">← 返回</NuxtLink>
+            <NuxtLink to="/blogs/coding" class="text-gray-400 hover:text-gray-500 dark:text-white">← 返回</NuxtLink>
         </div>
         <PageToc />
     </div>

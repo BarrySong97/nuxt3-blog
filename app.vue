@@ -1,8 +1,10 @@
 
 <template >
-    <LayoutHeader />
-    <div class="content ">
-        <NuxtPage />
+    <div class="bg-white dark:bg-black">
+        <LayoutHeader />
+        <div class="content ">
+            <NuxtPage />
+        </div>
     </div>
 </template>
 <style>

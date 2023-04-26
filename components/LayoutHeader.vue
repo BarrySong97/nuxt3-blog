@@ -1,20 +1,34 @@
 <template>
     <div class="sticky top-0 bg-white grid grid-cols-3 p-4  items-center header">
-        <h1 class="tracking-wider font-600 text-2xl self-center">ByLittle</h1>
+        <h1 class="tracking-wider font-600 text-2xl self-center dark:text-white">ByLittle</h1>
         <nav class="justify-self-center self-end">
-            <NuxtLink activeClass="activeLink " to="/" class="mr-4 link">Home</NuxtLink>
-            <NuxtLink :class="{ 'activeLink': isPost }" to="/blogs/coding" class="link">Blog</NuxtLink>
+            <NuxtLink activeClass="activeLink " to="/" class="mr-4 link dark:text-white">Home</NuxtLink>
+            <NuxtLink :class="{ 'activeLink': isPost }" to="/blogs/coding" class="link dark:text-white">Blog</NuxtLink>
         </nav>
-        <a class="place-self-end " :href="githubUrl" target="_blank">
-            <Github class="icon" />
-        </a>
+        <div class="flex place-self-end">
+
+            <div @click="toggleDark()">
+                <Moon class="icon mr-2 dark:text-white" v-if="isDark" />
+                <Sun class="icon mr-2" v-else="!isDark" />
+            </div>
+            <a class=" flex" :href="githubUrl" target="_blank">
+                <div>
+                    <Github class="icon dark:text-white" />
+                </div>
+            </a>
+        </div>
     </div>
 </template>
 <script setup lang="ts">
+import Moon from "@/assets/icons/Moon.vue"
+import Sun from "@/assets/icons/Sun.vue"
+import { useDark, useToggle } from '@vueuse/core'
 import Github from "@/assets/icons/Github.vue"
 const route = useRoute();
 const isPost = computed(() => route.path.includes('/blogs'));
 const githubUrl = 'https://github.com/BarrySong97'
+const isDark = useDark()
+const toggleDark = useToggle(isDark)
 </script>
 
 <style scoped>
@@ -22,6 +36,10 @@ const githubUrl = 'https://github.com/BarrySong97'
     color: #71717a;
     padding: 8px 16px;
     font-weight: 600;
+}
+
+.dark .link {
+    color: white;
 }
 
 .activeLink {
@@ -35,12 +53,28 @@ const githubUrl = 'https://github.com/BarrySong97'
     border-radius: 8px;
 }
 
+.dark .activeLink {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    --elements-backdrop-filter: saturate(200%) blur(20px);
+    --elements-backdrop-background: #282a2ecc;
+    backdrop-filter: var(--elements-backdrop-filter);
+    background: var(--elements-backdrop-background);
+
+}
+
 .header {
     z-index: 100;
     border-bottom: 1px solid #eaeaea;
 }
 
+.dark .header {
+    background-color: #0c0d0ccc;
+    border-bottom: 1px solid #0c0d0ccc;
+}
+
 .icon {
     font-size: 24px;
+    cursor: pointer;
 }
 </style>

@@ -6,13 +6,13 @@
     <div :class="postClass">
         <a class="post relative p-4" :class="postItemClass" v-for="item in  data " :key="item._id" :href="item._path"
             :style="backgroundImageStyle(item.cover)">
-            <div class=" font-semibold mb-1 title">
+            <div class=" font-semibold mb-1 title dark:text-white">
                 {{ item.title }}
             </div>
             <div class="font-semibold text-sm text-gray-400">
                 {{ item.date }}
             </div>
-            <div class="absolute startOfYear font-bold text-2xl">
+            <div class="absolute startOfYear font-bold text-2xl ">
                 {{ item.startOfYear }}
             </div>
         </a>
@@ -79,6 +79,10 @@ const backgroundImageStyle = (imageUrl?: string) => (imageUrl ? {
     color: rgb(24 24 27/var(--tw-text-opacity))
 }
 
+.dark .categoryItemActive {
+    color: rgb(255 255 255/var(--tw-text-opacity))
+}
+
 .title {
     color: #3f3f46
 }
@@ -90,6 +94,13 @@ const backgroundImageStyle = (imageUrl?: string) => (imageUrl ? {
     border-radius: 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+}
+
+.dark .post {
+    --elements-backdrop-filter: saturate(200%) blur(20px);
+    --elements-backdrop-background: #282a2ecc;
+    backdrop-filter: var(--elements-backdrop-filter);
+    background: var(--elements-backdrop-background);
 }
 
 @media (min-width: 1536px) {
@@ -136,7 +147,7 @@ const backgroundImageStyle = (imageUrl?: string) => (imageUrl ? {
 
 .startOfYear {
     right: 16px;
-    color: #555;
+    color: rgb(112, 112, 117);
     opacity: 0.3;
     font-style: italic;
     bottom: 16px;
