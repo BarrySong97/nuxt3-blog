@@ -12,6 +12,8 @@ export default defineNuxtConfig({
   },
   content: {
     documentDriven: true,
-    // https://content.nuxtjs.org/api/configuration
+    experimental: {
+      clientDB: true,
+    },
   },
 });
