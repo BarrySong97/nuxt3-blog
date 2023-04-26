@@ -37,7 +37,7 @@ const { data } = await useAsyncData(`/`, async () => {
     const dateList = dataList
         .filter(v => v.title !== 'About')
         .filter(V => V.category === route.params.category ?? 'coding')
-        .map(v => ({ ...v, date: dayjs(v.date).format('YYYY-MM-DD HH:mm') }))
+        .map(v => ({ ...v, date: dayjs(v.date).format('YYYY-MM-DD HH:mm'), }))
         .sort((a, b) => dayjs(a.date).valueOf() - dayjs(b.date).valueOf())
 
     const yearList = dateList
