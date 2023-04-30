@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import Police from '@/assets/icons/Police.vue'
 import Elevate from '@/assets/icons/Elevate.vue';
+import Butter from '~/assets/icons/Butter.vue';
 const projects = [
     {
         name: 'Elevate',
@@ -15,6 +16,14 @@ const projects = [
         // englishName: 'Case Police',
         description: '检查你的简历是否有大小写铭感',
         link: 'https://case-police-linter.vercel.app/'
+    },
+    {
+
+        name: 'Butter',
+        icon: Butter,
+        // englishName: 'Case Police',
+        description: '一个简洁的习惯追踪器',
+        link: 'https://bter.netlify.app/'
     }
 ]
 </script>

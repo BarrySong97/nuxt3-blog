@@ -8,14 +8,14 @@ title: BarrySong's Blog
 
 React / Vue / Flutter / Nodejs / Electron / 3 年经验 / 本科
 
-### 在其他地方找到我 :running:
-
-::ContactList
-::
-
 <!-- 你可以在 微博，bilibili，twitter，juejin 找到我, 我都叫@BarrySong4Real, 没有提到的平台同理。 -->
 
 ### 我做了什么 :sunglasses:
 
 ::ProjectList
+::
+
+### 在其他地方找到我 :running:
+
+::ContactList
 ::
