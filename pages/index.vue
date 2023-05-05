@@ -4,7 +4,6 @@
             <div class="flex-1 px-24 pt-10">
                 <div class="flex mb-6 ">
                     <img class="avatar mr-4" src="https://files.catbox.moe/0unbct.jpg" />
-
                     <div>
                         <div class="dark:text-white font-600 text-2xl">
                             Barry Song
@@ -20,7 +19,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pl-4 dark:text-white">
+                <div class="dark:text-white">
                     <ContentDoc path="/about" />
                 </div>
             </div>

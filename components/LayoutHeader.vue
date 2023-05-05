@@ -7,10 +7,14 @@
         </nav>
         <div class="flex place-self-end">
 
-            <div @click="toggleDark()">
-                <Moon class="icon mr-2 dark:text-white" v-if="isDark" />
-                <Sun class="icon mr-2" v-else="!isDark" />
-            </div>
+            <UseDark v-slot="{ isDark, toggleDark }">
+                <div @click="toggleDark()">
+                    <Moon class="icon mr-2 dark:text-white" v-if="isDark" />
+
+                    <!-- <Moon class="icon mr-3 dark:text-white" v-if="isDark" /> -->
+                    <Sun class="icon mr-3 dark:text-white" v-else />
+                </div>
+            </UseDark>
             <a class=" flex" :href="githubUrl" target="_blank">
                 <div>
                     <Github class="icon dark:text-white" />
@@ -22,13 +26,11 @@
 <script setup lang="ts">
 import Moon from "@/assets/icons/Moon.vue"
 import Sun from "@/assets/icons/Sun.vue"
-import { useDark, useToggle } from '@vueuse/core'
 import Github from "@/assets/icons/Github.vue"
 const route = useRoute();
 const isPost = computed(() => route.path.includes('/blogs'));
 const githubUrl = 'https://github.com/BarrySong97'
-const isDark = useDark()
-const toggleDark = useToggle(isDark)
+import { UseDark } from '@vueuse/components'
 </script>
 
 <style scoped>

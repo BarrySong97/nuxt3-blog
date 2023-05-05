@@ -1,6 +1,6 @@
 
 <template >
-    <div class="bg-white dark:bg-black">
+    <div class=" dark:bg-black bg-white">
         <LayoutHeader />
         <div class="content ">
             <NuxtPage />

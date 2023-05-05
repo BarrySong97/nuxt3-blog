@@ -128,8 +128,8 @@ const backgroundImageStyle = (imageUrl?: string) => (imageUrl ? {
 }
 
 .blogItem:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateZ(10px) scale(1.05);
+    /* box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 4px 14px rgba(0, 0, 0, 0.1); */
 }
 
 .card {
@@ -137,8 +137,8 @@ const backgroundImageStyle = (imageUrl?: string) => (imageUrl ? {
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateZ(10px) scale(1.05);
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); */
 }
 
 /* Large devices (desktops, 992px and up) */

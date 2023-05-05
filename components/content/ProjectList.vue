@@ -19,11 +19,12 @@ const projects = [
     },
     {
 
-        name: 'Butter',
+        name: 'Breeze',
         icon: Butter,
+        img: '/imgs/qrcode.png',
         // englishName: 'Case Police',
         description: '一个简洁的习惯追踪器',
-        link: 'https://bter.netlify.app/'
+        link: 'https://brz.netlify.app/'
     }
 ]
 </script>
@@ -32,6 +33,7 @@ const projects = [
         <a :href="item.link" target="_blank" class="project px-3 py-3" v-for="item in projects" :key="item.name">
             <div class="mr-3 icon">
                 <component :is="item.icon" />
+
             </div>
             <div>
                 <div class="text-lg">

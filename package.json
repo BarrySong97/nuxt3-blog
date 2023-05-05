@@ -20,6 +20,7 @@
     "tailwindcss": "^3.3.1"
   },
   "dependencies": {
+    "@vueuse/components": "^10.1.2",
     "@vueuse/core": "^10.1.0",
     "dayjs": "^1.11.7",
     "vue-final-modal": "^4.4.2"

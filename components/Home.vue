@@ -2,10 +2,10 @@
     <div class="font-serif h-screen linear-gradient">
         <div class="flex">
             <div class="flex-1 px-24 pt-10">
-                <div class="flex mb-6">
+                <div class="flex mb-6 ">
                     <img class="avatar mr-4" src="https://files.catbox.moe/0unbct.jpg" />
 
-                    <div>
+                    <div class="flex flex-col justify-evenly">
                         <div class="font-600 text-2xl">
                             Barry Song - 宋天健
                         </div>
@@ -21,7 +21,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pl-4 ">
+                <div>
                     <ContentDoc path="/about" />
                 </div>
             </div>
@@ -39,6 +39,6 @@
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 8px;
 }
 </style>
