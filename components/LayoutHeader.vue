@@ -11,14 +11,6 @@
                 <div class="mx-1.5 font-semibold">搜索</div>
                 <div class="ml-4px">⌘ K</div>
             </div>
-            <UseDark v-slot="{ isDark, toggleDark }">
-                <div @click="toggleDark()">
-                    <Moon class="icon mr-2 dark:text-white" v-if="isDark" />
-
-                    <!-- <Moon class="icon mr-3 dark:text-white" v-if="isDark" /> -->
-                    <Sun class="icon mr-3 dark:text-white" v-else />
-                </div>
-            </UseDark>
             <a class=" flex" :href="githubUrl" target="_blank">
                 <div>
                     <Github class="icon dark:text-white" />
@@ -28,15 +20,12 @@
     </div>
 </template>
 <script setup lang="ts">
-import Moon from "@/assets/icons/Moon.vue"
-import Sun from "@/assets/icons/Sun.vue"
 import Github from "@/assets/icons/Github.vue"
 const route = useRoute();
 const isPost = computed(() => route.path.includes('/blogs'));
 const githubUrl = 'https://github.com/BarrySong97/nuxt3-blog'
 import { useModal } from 'vue-final-modal';
 import SearchModal from '@/components/SearchModal.vue';
-import { UseDark } from '@vueuse/components'
 const { open, close } = useModal({
     component: SearchModal,
     attrs: {
