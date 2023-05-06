@@ -12,6 +12,11 @@ export default defineNuxtConfig({
   },
   content: {
     documentDriven: true,
+    markdown: {
+      toc: {
+        depth: 3,
+      },
+    },
     highlight: {
       // OR
       theme: {

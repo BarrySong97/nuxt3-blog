@@ -1,17 +1,25 @@
 <script setup lang="ts">
 const { toc } = useContent();
+console.log(toc.value.links[4]);
 
 </script>
 
 <template>
     <div class="toc" v-if="toc.links.length">
 
-        <span>目录</span>
+        <div class="mb-1">目录</div>
         <ul v-if="toc && toc.links">
             <li v-for="link in toc.links" :key="link.text">
                 <a :href="`#${link.id}`" class="dark:text-white">
                     {{ link.text }}
                 </a>
+                <ul class="ml-2" v-if="link && link.children">
+                    <li v-for="sublink in link.children" :key="sublink.text">
+                        <a :href="`#${sublink.id}`" class="dark:text-white">
+                            {{ sublink.text }}
+                        </a>
+                    </li>
+                </ul>
             </li>
         </ul>
     </div>
