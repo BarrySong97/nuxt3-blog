@@ -8,7 +8,6 @@
         </a>
         <!-- <span class="block" v-else="!item.url">{{ item.name }}</span> -->
     </div>
-    <ModalsContainer />
 </template>
 <script setup lang="ts">
 import Bilibili from '@/assets/icons/Bilibili.vue'
