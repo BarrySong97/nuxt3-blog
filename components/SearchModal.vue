@@ -98,6 +98,11 @@ const isEqual = (a: string, b: string) => a.toLowerCase() === b.toLowerCase();
 watch(inputValue, () => {
     debouncedSearch();
 })
+const inputRef = ref<HTMLInputElement | null>(null)
+
+onMounted(() => {
+    inputRef.value?.focus()
+})
 
 </script>
 
@@ -107,7 +112,8 @@ watch(inputValue, () => {
         content-class="flex flex-col  mx-4 p-4 bg-white dark:bg-gray-900 mt-40 border dark:border-gray-700 rounded-lg space-y-2">
         <div class="container">
             <div class="semi-input-wrapper mb-16px  semi-input-wrapper-default ">
-                <input v-model="inputValue" class="semi-input semi-input-default" type="text" placeholder="搜索文章">
+                <input ref="inputRef" v-model="inputValue" class="semi-input semi-input-default" type="text"
+                    placeholder="搜索文章">
             </div>
             <div v-if="searchData" class="mt-3 overflow-auto searchList">
                 <div v-for="searchItem in searchData" :key="searchItem.path">
