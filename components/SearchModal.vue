@@ -85,7 +85,6 @@ const debouncedSearch = debounce(async () => {
                 content: searchedItem,
             };
         }).filter(v => !!v.content.length);
-        console.log(result);
 
         searchData.value = result;
     } else {

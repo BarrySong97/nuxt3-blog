@@ -1,6 +1,5 @@
 <script setup lang="ts">
 const { toc } = useContent();
-console.log(toc.value.links[4]);
 
 </script>
 

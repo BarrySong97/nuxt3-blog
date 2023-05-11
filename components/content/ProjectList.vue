@@ -14,7 +14,7 @@ const projects = [
         name: 'Case Police',
         icon: Police,
         // englishName: 'Case Police',
-        description: '检查你的简历是否有大小写铭感',
+        description: '检查你的简历是否有名词大小写错误',
         link: 'https://case-police-linter.vercel.app/'
     },
     {
