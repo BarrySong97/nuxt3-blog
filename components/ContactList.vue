@@ -1,12 +1,9 @@
 <template >
-    <div v-for="item in contactList" class="flex items-center mb-2" :key="item.name">
-        <a class="flex cursor-pointer items-center" :href="item.url || item.email" target="_blank" @click="item.onClick">
-            <component :is="item.icon" class="icon" :class="item.class" />
-            <span class="ml-2">{{ item.name === 'Wechat' || item.name === 'Email' ? '' : '@' }}{{ item.username }}</span>
-
-            <!-- {{ item.name }} -->
+    <div class="flex">
+        <a v-for="item in contactList" class="flex cursor-pointer items-center" :href="item.url || item.email"
+            target="_blank" @click="item.onClick">
+            <component :is="item.icon" class="icon" />
         </a>
-        <!-- <span class="block" v-else="!item.url">{{ item.name }}</span> -->
     </div>
 </template>
 <script setup lang="ts">
@@ -16,7 +13,7 @@ import Wechat from '@/assets/icons/Wechat.vue';
 import Email from '@/assets/icons/Email.vue';
 import Weibo from '@/assets/icons/Weibo.vue';
 import WechatCode from '@/components/WechatCode.vue';
-import { ModalsContainer, useModal } from 'vue-final-modal'
+import { useModal } from 'vue-final-modal'
 
 const { open, close } = useModal({
     component: WechatCode,
@@ -32,7 +29,8 @@ const contactList = [
         name: 'Weibo',
         username: 'BarrySong4Real',
         icon: Weibo,
-        class: 'weibo'
+        class: 'weibo',
+        url: 'https://weibo.com/u/2670904663'
     },
     {
         name: 'Bilibili',
@@ -68,8 +66,9 @@ const contactList = [
 </script>
 <style scoped>
 .icon {
-    font-size: 28px;
-    margin-right: 8px;
+    font-size: 16px;
+    margin-right: 16px;
+    color: gray;
 }
 
 a:hover {
@@ -100,14 +99,6 @@ a:hover {
 
 
 a {
-    font-family: var(--typography-font-body);
-    font-weight: var(--prose-a-fontWeight);
-    -webkit-text-decoration: var(--prose-a-textDecoration);
-    text-decoration: var(--prose-a-textDecoration);
-    border-bottom-width: var(--prose-a-border-width);
-    border-bottom-style: var(--prose-a-border-style-static);
-    border-bottom-color: var(--prose-a-border-color-static);
-    padding-bottom: var(--prose-a-border-distance);
-    color: var(--prose-a-color-static);
+    cursor: pointer;
 }
 </style>

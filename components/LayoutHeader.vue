@@ -1,6 +1,6 @@
 <template>
     <div class="sticky top-0 bg-white grid grid-cols-3 p-4  items-center header">
-        <h1 class="tracking-wider font-600 text-2xl self-center dark:text-white">ByLittle</h1>
+        <a href="/" class="tracking-wider font-600 text-2xl self-center dark:text-white">ByLittle</a>
         <nav class="justify-self-center ">
             <NuxtLink activeClass="activeLink " to="/" class="mr-4 link dark:text-white">Home</NuxtLink>
             <NuxtLink :class="{ 'activeLink': isPost }" to="/blogs/coding" class="link dark:text-white">Blog</NuxtLink>

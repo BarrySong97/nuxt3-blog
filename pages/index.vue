@@ -4,7 +4,8 @@
             <div class="flex-1 px-24 pt-10">
                 <div class="flex mb-6 ">
                     <img class="avatar mr-4" src="https://files.catbox.moe/0unbct.jpg" />
-                    <div>
+                    <div class="flex flex-col justify-between">
+
                         <div class="dark:text-white font-600 text-2xl">
                             Barry Song
                         </div>
@@ -14,8 +15,8 @@
                         <div class="mb-1 dark:text-white">
                             1997.10.17
                         </div>
-                        <div class="text-gray-500 text-sm">
-                            热爱一切故事，电影/漫画/动漫/电视剧/小说
+                        <div class="dark:text-white">
+                            <ContactList />
                         </div>
                     </div>
                 </div>
