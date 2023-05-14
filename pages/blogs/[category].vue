@@ -55,7 +55,7 @@ const { data } = await useAsyncData(`/`, async () => {
 
     return yearList?.reverse()
 })
-const postClass = data.value?.[0].category === 'coding' ? 'flex flex-col items-center w-full py-8 pt-4' : 'grid py-8 px-8 pt-4 gap-2 grid-cols-4';
+const postClass = data.value?.[0].category === 'coding' ? 'flex flex-col items-center w-full py-8 pt-4' : 'flex py-8 px-8 justify-center';
 const postItemClass = data.value?.[0].category === 'coding' ? 'blogItem' : 'card';
 
 const backgroundImageStyle = (imageUrl?: string) => (imageUrl ? {
