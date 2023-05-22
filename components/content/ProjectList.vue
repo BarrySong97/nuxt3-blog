@@ -24,7 +24,7 @@ const projects = [
         img: '/imgs/qrcode.png',
         // englishName: 'Case Police',
         description: '一个简洁的习惯追踪器',
-        link: 'https://brz.netlify.app/'
+        link: '/what-is-breeze'
     }
 ]
 </script>

@@ -1,5 +1,5 @@
 ---
-title: docker版jenkins配置
+title: 配置docker环境下的jenkins
 date: 2023-05-18T14:34
 category: coding
 layout: article
@@ -122,3 +122,23 @@ https://github.com/BarrySong97
 ```
 
 我就是 BarrySong97
+
+### 复制私密 env 文件到 jenkins 容器里面
+
+当我们是公有项目在 github 上的时候，我们通常不会把服务器相关的配置传上去，但是部署的时候我们需要，所以我们要手动把 env 文件传上去
+
+也就是我们需要把文件传进 jenkins 的容器里面（jenkins 在 docker 容器里面）
+
+```bash
+sudo docker cp ./.env my-jenkins:/var/jenkins_home/workspace/breeze后端
+```
+
+这是一种思路，但是别忘记了我们在配置 jenkins 的时候挂载文件目录在宿主环境里面
+
+我们直接把.env 文件传到服务器上，然后移动到挂载的目录就行了。
+
+一般我们 jenkins clone 的代码在 /var/jenkins_home/workspace/ 之下
+
+```bash
+cp <源文件> <目标文件>
+```

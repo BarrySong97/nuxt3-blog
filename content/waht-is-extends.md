@@ -24,8 +24,7 @@ layout: article
 
 所以看这篇文章之前一定要过一遍这两个东西，不一定非要非常清晰，但是必须要有一个大概的了解，它们不是分割开来的知识。
 
-([【前端基础】盘根错节的寄生世界之原型和原型链](https://bs4real.netlify.app/what-is-prototype)
-)
+([【前端基础】盘根错节的寄生世界之原型和原型链](https://bs4real.netlify.app/what-is-prototype))
 
 ([【前端基础】盘根错节的寄生世界之夺舍 this 指向和绑定](https://bs4real.netlify.app/what-is-this)
 )
