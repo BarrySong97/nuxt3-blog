@@ -1,5 +1,6 @@
 <template>
     <div class="articleContent m-auto">
+        <img class="w-full cover mt-8" v-if="!!cover" :src="cover" />
         <h1 class="mt-8 mb-6 font-extrabold text-4xl dark:text-white">{{ page.title }}</h1>
         <div class="text-sm text-gray-400 mb-5">{{ date }}</div>
         <div class="dark:text-white">
@@ -17,6 +18,7 @@ const content = useContent()
 
 const page = content.page
 const date = dayjs(page.value.date).format('YYYY-MM-DD HH:mm')
+const cover = page.value.cover
 
 
 </script>
@@ -42,5 +44,8 @@ a:hover {
 .articleContent {
     max-width: 65ch;
 
+}
+.cover {
+    border-radius: 10px;
 }
 </style>

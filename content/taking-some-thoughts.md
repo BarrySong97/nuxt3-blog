@@ -1,0 +1,88 @@
+---
+title: 裸辞两个月入夏之前随便写点
+date: 2023-05-23T16:59
+titleColor: white
+authors: Barry
+category: casual
+layout: article
+cover: https://images-1253529509.cos.ap-chengdu.myqcloud.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230523170724.jpg?q-sign-algorithm=sha1&q-ak=AKIDylVp8DmJ16oVgpaRExDRCjTkGyk4HCAkZD1nPNTzNL1CdvOfJj7r1IREY_6jlP79&q-sign-time=1684833054;1684836654&q-key-time=1684833054;1684836654&q-header-list=host&q-url-param-list=&q-signature=e7721e55d4f14cfb7d7405555d35d94350957056&x-cos-security-token=KM4y2iM24MRkc3mw4VbLIoTg6lpPnQQa401a584331e4e90fbd7b4356de85102bVngcwT8UGA0UyLab6l2LrsMcG9hcbAQ4rdYaCpdAiFPZ34AU1EfhIUisxlGtRCRJiBtP79IH16hgQ73upPwNRsWrjZef61FU_s2Pkln-eeXE6zQok4M2kXHDXPNhnZiufyf2dEptMzfotYkRD-0S-qiURdGXn7IBKp4fA9nbXOnnFbD0uuYorIiXw9YlLJ6P
+---
+
+## 坚持的试炼
+
+说实话真不知道写什么，昨天才写了一篇文章来表达习惯记录的问题，习惯记录是为了更好的改变自己。
+
+那么我是否有真的改变自己呢？
+
+确实我裸辞的第一个原因就是想找一下自己的状态，因为我什么都坚持不下去，这让我很难受。
+
+但是我却非常奇怪的坚持了快一个月的冥想，尽管中间断了几天。
+
+![habit](https://images-1253529509.cos.ap-chengdu.myqcloud.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230523172340.png?q-sign-algorithm=sha1&q-ak=AKIDwom6QdTUhJ84lCZDwZn4enD9o5zacBX-HTE1KrNKm5Tjf83C8MagxIaML2AShy1Q&q-sign-time=1684833853;1684837453&q-key-time=1684833853;1684837453&q-header-list=host&q-url-param-list=&q-signature=32830ff52c15811bbac7becc62365f9114b5be78&x-cos-security-token=AG0yy8lzDnHkQrIcbKKTG6L7hBUf9RRa4a5d0f0bedc20fa06e748cbc982832c5eDX2cdW10SJJc5uSQFBXxGrUV1eef6sdM73bWch-yfFr6TGCqbaqn1QaNgj6dCXgSZuB2iW-eKzyoGsa4rmiSlAm9MCX1_uO39MaeUtAntkVtBjuEVP3DDfqFqIU9eJYdVuRsgcu4fd8lX54vctkl6Y4tFC2dC4iGrl-LSJxBa9s4I9ct5H6-XBePTi7QSPz)
+
+其实我是从2月份裸辞的时候开始的，只是没事找点事情做，说实话我以前对冥想的了解，就是闭着眼睛专注想事情。
+
+后来学习冥想过后，才发现，原来里面门道这么多，搞得我都以为修仙的呼吸吐纳之法也有科学的道理。
+
+因为我确实感受到了许多的好处。
+
+回到习惯的问题上面来，除了冥想，我最想干的就是写作，因为我一直有一个写网络小说的梦想，很遗憾，我没有这个天赋，我连编一千个字的耐心都没有。
+
+不过这也不能怪我，毕竟我阅历不多，而且很少看书和写文章，写不出来我也没什么挫败感。
+
+昨天我写到，坚持90天写作就可以休息一会，这不会破坏习惯和训练的意愿，是的我的习惯其实从半个月之前就开始，但是因为中途断了几天我就开始思想滑坡。
+
+毕竟读书读的少了，自然笔就没什么墨水。
+
+我在那片文章里面告诉自己，我其实需要减少强度来获得坚持，我其实有点不确定是否是好的，毕竟很难判断自己是不是想偷懒了。
+
+不过这么多年的经验，能坚持已经是难能可贵。
+
+毕竟坚持是做好任何事情的第一步，它不一定帮你前进，但是没有它就没法前进。
+
+坚持就是前进的道路，如何前进，前进速度如何，没有坚持永远无法实现，就像空中楼阁。
+
+今天我已经完成我习惯记录的目标，写500字，就如你所看到的，就连500字我都非常艰难的坚持，怪不得世界上这么多庸人，坚持的力量是在是伟大。
+
+好了说了这么多，我想谈谈其他的事情。
+
+## 我秃了但是我没变强
+
+比如，我秃了这件事情，其实这件事让我非常郁闷，很难受，也很难接受。
+
+不过有了冥想之后，我就开始正视和接收（可能是在逃避），我发现其实我就算不秃又怎么样呢，我最想要的就是变得有钱，如果有钱来换头发，我是肯定换的。
+
+所以我接受自己秃了，不管怎么样，只要自信就行，自信才是最好的武器。
+
+我再不自信我就一无所有，所以秃头又如何，而且我就算焦虑，头发也不会长回来。
+
+我在《邓小平自传》里面看到小平去参加国际会议的英姿，穿着西服迈着自信的步伐。
+
+小平应该不是太高，却能在人高马大的外国人面前如此自信，给我的内心带来一点小震撼。
+
+说到冥想带我的一切，最重要的就是专注和面对一些没必要的纠结。
+
+当我们冥想的时候，会产生各种杂念，对我来说消除这些杂念非常困难，一般我把注意力放在呼吸之上
+
+鼻口的出气，肚子的伸缩。
+
+但是执念还是很强大，不小心就走神，甚至你都没有注意，难怪古代人练功走火入魔。
+
+因为真的给你一种入魔的感觉，去到了幻想的世界难以自拔。
+
+后来我就放弃消灭各种杂念，接收它们所有，它们都是自己的映射，不好的，好的都让他们过去，我只想平静专注。
+
+## 一些展望
+
+现在我大概明确我明天要做什么了，继续写文章，开始算法的练习，下一份工作面试准备，毕竟我不能没有收入。
+
+看着我写的乱七八糟的文章，我应该要多读一点书，早睡一点，毕竟每次睡得晚我都很后悔。
+
+对未来，我希望能遇到一个人吧，大概，其实我很难想象和一个人在一起是什么感觉。
+
+毕竟没钱在这个时代什么都干不了，其实我不想买房，因为现在房地产在慢慢坠毁，而且我也不喜欢贷款买房。
+
+嘻嘻，吃饭了，再见。
+
+
+

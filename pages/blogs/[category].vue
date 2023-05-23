@@ -4,9 +4,9 @@
         <NuxtLink class="categoryItem" activeClass="categoryItemActive" to="/blogs/casual">随笔</NuxtLink>
     </div>
     <div :class="postClass">
-        <a class="post relative p-4" :class="postItemClass" v-for="item in  data " :key="item._id" :href="item._path"
+        <a class="post relative p-4" :class="postItemClass" v-for="item in    data   " :key="item._id" :href="item._path"
             :style="backgroundImageStyle(item.cover)">
-            <div class=" font-semibold mb-1 title dark:text-white">
+            <div class="font-semibold mb-1 title dark:text-white" :style="{ color: item.titleColor }">
                 {{ item.title }}
             </div>
             <div class="font-semibold text-sm text-gray-400">
@@ -30,6 +30,7 @@ interface MyCustomParsedContent extends ParsedContent {
     tags: string[]
     cover: string;
     category: string;
+    titleColor: string;
     startOfYear: string
 }
 const { data } = await useAsyncData(`/`, async () => {
@@ -55,7 +56,7 @@ const { data } = await useAsyncData(`/`, async () => {
 
     return yearList?.reverse()
 })
-const postClass = data.value?.[0].category === 'coding' ? 'flex flex-col items-center w-full py-8 pt-4' : 'flex py-8 px-8 justify-center';
+const postClass = data.value?.[0].category === 'coding' ? 'flex flex-col items-center w-full py-8 pt-4' : 'flex flex-col py-8 px-8 justify-center';
 const postItemClass = data.value?.[0].category === 'coding' ? 'blogItem' : 'card';
 
 const backgroundImageStyle = (imageUrl?: string) => (imageUrl ? {
