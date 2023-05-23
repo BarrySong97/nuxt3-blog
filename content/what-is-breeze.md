@@ -8,9 +8,13 @@ layout: article
 
 [![1684737100622.png](https://pic.peo.pw/a/2023/05/22/646b0c5410664.png)](https://pic.peo.pw/a/2023/05/22/646b0c5410664.png)
 
-[本地版本(数据在本地)](https://brz.netlify.app/)
+[本地版本(数据在本地)](https://brz.netlify.app/) 
 
-[cloud 版本(数据在服务器)](http://www.breezelite.cn/)
+[github地址](https://github.com/BarrySong97/Breeze)
+
+[cloud 版本(数据在服务器)](http://www.breezelite.cn/) 
+
+[github地址](https://github.com/BarrySong97/Breeze-nest)
 
 ## 微风是什么？
 
