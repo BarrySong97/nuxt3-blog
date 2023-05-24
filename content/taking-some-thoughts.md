@@ -5,7 +5,7 @@ titleColor: white
 authors: Barry
 category: casual
 layout: article
-cover: https://images-1253529509.cos.ap-chengdu.myqcloud.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230523170724.jpg?q-sign-algorithm=sha1&q-ak=AKIDylVp8DmJ16oVgpaRExDRCjTkGyk4HCAkZD1nPNTzNL1CdvOfJj7r1IREY_6jlP79&q-sign-time=1684833054;1684836654&q-key-time=1684833054;1684836654&q-header-list=host&q-url-param-list=&q-signature=e7721e55d4f14cfb7d7405555d35d94350957056&x-cos-security-token=KM4y2iM24MRkc3mw4VbLIoTg6lpPnQQa401a584331e4e90fbd7b4356de85102bVngcwT8UGA0UyLab6l2LrsMcG9hcbAQ4rdYaCpdAiFPZ34AU1EfhIUisxlGtRCRJiBtP79IH16hgQ73upPwNRsWrjZef61FU_s2Pkln-eeXE6zQok4M2kXHDXPNhnZiufyf2dEptMzfotYkRD-0S-qiURdGXn7IBKp4fA9nbXOnnFbD0uuYorIiXw9YlLJ6P
+cover: https://images-1253529509.cos.ap-chengdu.myqcloud.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230523170724.jpg
 ---
 
 ## 坚持的试炼
