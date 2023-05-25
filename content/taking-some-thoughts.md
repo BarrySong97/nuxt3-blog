@@ -18,7 +18,7 @@ cover: https://images-1253529509.cos.ap-chengdu.myqcloud.com/%E5%BE%AE%E4%BF%A1%
 
 但是我却非常奇怪的坚持了快一个月的冥想，尽管中间断了几天。
 
-![habit](https://images-1253529509.cos.ap-chengdu.myqcloud.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230523172340.png?q-sign-algorithm=sha1&q-ak=AKIDwom6QdTUhJ84lCZDwZn4enD9o5zacBX-HTE1KrNKm5Tjf83C8MagxIaML2AShy1Q&q-sign-time=1684833853;1684837453&q-key-time=1684833853;1684837453&q-header-list=host&q-url-param-list=&q-signature=32830ff52c15811bbac7becc62365f9114b5be78&x-cos-security-token=AG0yy8lzDnHkQrIcbKKTG6L7hBUf9RRa4a5d0f0bedc20fa06e748cbc982832c5eDX2cdW10SJJc5uSQFBXxGrUV1eef6sdM73bWch-yfFr6TGCqbaqn1QaNgj6dCXgSZuB2iW-eKzyoGsa4rmiSlAm9MCX1_uO39MaeUtAntkVtBjuEVP3DDfqFqIU9eJYdVuRsgcu4fd8lX54vctkl6Y4tFC2dC4iGrl-LSJxBa9s4I9ct5H6-XBePTi7QSPz)
+![habit](https://images-1253529509.cos.ap-chengdu.myqcloud.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230523172340.png)
 
 其实我是从2月份裸辞的时候开始的，只是没事找点事情做，说实话我以前对冥想的了解，就是闭着眼睛专注想事情。
 
