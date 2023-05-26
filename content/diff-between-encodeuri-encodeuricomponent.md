@@ -8,13 +8,17 @@ layout: article
 
 ## 小说两句
 
-其实这个问题蛮重要的，在实际开发中遇到过
+其实这个问题蛮重要的，经常在实际开发中遇到。
 
-当你需要把一些数据通过 url 传到后端，如果数据复杂并且有特殊字符，而且特殊字符和 url 的特殊字符冲突，那么就要 encode
+我们在进行 http 通信，也就是调接口的过程。
 
-这就不得不提原生提供的 **encodeURL** 和 **encodeURIComponent** 有什么区别？
+通常不是把数据放在 url 上，就是放在 body 里里面，还有上传 file 放在 formdata 里面。
 
-不过大家一般都是用 **encodeURIComponent**，好像这个看起来要全能一点，使用起来也一直没有问题，所以我就一直没有仔细研究过。
+当传输的数据里面有特殊字符，就有导致解析失败或者解析异常发生，破坏了 url 的合法性和传参的正确性
+
+这就不得不提原生提供接口 **encodeURL** 和 **encodeURIComponent** 把特殊字符转换成特殊的 code，后端接收到的时候在转换回来，这样就有效的保证了 url 有效性。
+
+在实际代码大家一般都是用 **encodeURIComponent**，别人一直都在用这个，至于为什么，我一直都没有思考过
 
 那么作为一个在实际项目中要用到的东西，我作为一个面试官肯定要问(我还没当过面试官)，好吧，还是绕不过面试这一关。
 
@@ -23,10 +27,6 @@ layout: article
 我们直接开始吧。
 
 ## 正文
-
-第一我们明确了它的目的是什么
-
-对 url 里面特殊的字符进行编码处理，让 url 能够正确的表达它的意义，正确传入后端解析。
 
 我们一般同 url 传输数据有两种方式
 
@@ -44,9 +44,9 @@ http://example.com/path/1;
 
 注意 1 可能是一个 url， 也可能是中文
 
-这两个都会让 url 造成混乱无法正确解析，所以必须转换
+这两个都会让 url 造成混乱无法正确解析，或者歧义
 
-每次传url参数的时候都要考虑是否有特殊字符串
+所以我们每次传 url 参数的时候都要考虑是否有特殊字符串
 
 ### 一个简单的小例子
 
@@ -56,11 +56,11 @@ http://example.com/path/1;
 const url = "https://example.com/path?param=value&key=hello/world";
 ```
 
-比如这个 url，`path?param=value&key=hello`是作为 **path params**，还是`hello/world`是作为**query**`key` 的 value 呢？
+比如这个 url，`path?param=value&key=hello`是作为 **path params**，还是`hello/world`是作为**query** `key` 的 value 呢？
 
-那其实我们这里肯定是作为 key 的 value
+那其实我们这里肯定是`key=hello/world`
 
-也就是我们要对`hello/world`进行编码
+也就是说，我们要对`hello/world`进行编码
 
 我们先不说 **encodeURI** 和 **encodeURIComponent** 有什么区别，就都试一下
 
@@ -153,3 +153,7 @@ var url = "https://example.com/path?url=https://test.com";
 ```
 
 明显这个 url 并不能被正确的解析，至于用什么来转换，就不用我多说了吧！
+
+但是我们不应该对整个 url 编码，而是只对传入的参数，query 或者 path params 编码，就算我们对整个 url 编码，也是不会消除歧义
+
+别忘了，一个是 url 的合法性，一个是传参的正确性
