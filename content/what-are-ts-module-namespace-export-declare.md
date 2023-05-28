@@ -57,7 +57,7 @@ git@github.com:BarrySong97/typescript-article-sample.git
 进入项目
 
 ```bash
-cd ./declare-exports-namespace-module/cd
+cd ./declare-exports-namespace-module
 ```
 
 安装依赖
@@ -106,10 +106,18 @@ const foo: Foo = {
 }
 ```
 
-把`/types`去掉，关掉vscode或者直接切换到App.tsx检查是否报错
+把`/types`去掉，关掉 vscode 或者直接切换到 App.tsx 检查是否报错
 
 ![error](https://images-1253529509.cos.ap-chengdu.myqcloud.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230525165935.png)
 
-###  tsconfig里面加载类型的门道
+### tsconfig 里面加载类型的门道
 
+- d.ts 的 d 是 decalre，d.ts 是 ts 声明文件
+
+如果你在 d.ts 文件里面定义一个 module，如果没有 declare 关键字，就会有报错提示
+
+- tsconfig 里面关键字
+  - ts 默认会把 nodemudles 下面所有的 @types 文件夹里面的 type 编译进去
+  - typeRoots 只有 typesroots 下面的包才会包含进来，值是一个路径数组，就会忽略 nodemodules 的 types
+  - types，值也是一个路径数组，关键字可以指定 nodemodules 里面的 types 才能被包含进来，如果值是一个空数组，那么禁止引入 types 里面的包
 
