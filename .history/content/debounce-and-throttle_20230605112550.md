@@ -1,0 +1,11 @@
+---
+title: debounce 和 throttle (防抖和节流)
+date: 2023-05-30T18:51
+authors: Barry
+layout: article
+category: coding
+---
+
+## 小说两句
+
+什么是防抖和节流，其实这两个概念非常简单，早期我在学习的时候把它想复杂了
